@@ -1,14 +1,9 @@
-function computerPlay(choice = Math.floor(Math.random() * 3)) {
+function computerPlay(throws) {
 
-if (choice = 0) {
-    return "Rock";
-} else if (choice = 1) {
-    return "Paper";
-} else if (choice = 2) {
-    return "Scissors";
+return throws[Math.floor(Math.random()*throws.length)];
+
 }
 
-return choice;
-}
+const throws = ['Rock','Paper','Scissors'];
 
-console.log(computerPlay());
+console.log(computerPlay(throws));
